@@ -93,7 +93,7 @@ while 1  %run the model until (x-timesteps) untill popsize reach asymptot
            asym(end+1)=sum(NN(:));
            if length(asym)>100
                %if t>40000
-               if abs(mean(asym(end-50:end))-mean(asym(end-99:end-49)))<100
+               if abs(mean(asym(end-49:end))-mean(asym(end-99:end-50)))<100
                    break
                end
                %end
